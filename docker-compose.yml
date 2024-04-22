@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+  mysql:
+    image: mysql:latest
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: 12345678 # Use your MySQL root password here
+      MYSQL_DATABASE: ghosteye
+      MYSQL_USER: test
+      MYSQL_PASSWORD: 12345678
+    ports:
+      - "3306:3306" # Expose MySQL port
+
